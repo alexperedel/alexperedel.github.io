@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Resume - Aleksandr</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <script src="./assets/js/final-project.js"></script>
 </head>
-<body>
+<body class="flex flex-col min-h-screen bg-[#F1F0E8]">
+
+<header class="body-header sticky top-0 z-50 flex items-center w-full bg-[#89A8B2] p-4 xl:flex-wrap">
+    <img class="logo w-12 h-12 mr-5 bg-transparent" src="./assets/images/logo.png" alt="Logo">
+    <h1 class="website-name text-2xl font-bold text-white mr-5"> My Portfolio </h1>
+
+    <nav class="top-nav hidden xl:flex items-center w-full ml-[50%] gap-5 text-white">
+        <a class="hover:text-[#F1F0E8]" href="./index.html">Home</a>
+        <a class="hover:text-[#F1F0E8]" href="./about.html">About</a>
+        <a class="hover:text-[#F1F0E8]" href="./contact.html">Contact</a>
+        <a class="hover:text-[#F1F0E8]" href="./projects.html">Projects</a>
+        <a class="hover:text-[#F1F0E8]" href="./mywork.html">Sample Work</a>
+    </nav>
+
+    <button id="menu-toggle" class="xl:hidden flex flex-col gap-1 items-end ml-auto">
+        <span class="w-6 h-1 bg-gray-800"></span>
+        <span class="w-6 h-1 bg-gray-800"></span>
+        <span class="w-6 h-1 bg-gray-800"></span>
+    </button>
+
+    <div id="mobile-menu" class="hidden xl:hidden flex flex-col items-center p-5 absolute top-20 left-0 w-full bg-[#89A8B2] text-white">
+        <a class="hover:text-[#F1F0E8]" href="./index.html">Home</a>
+        <a class="hover:text-[#F1F0E8]" href="./about.html">About</a>
+        <a class="hover:text-[#F1F0E8]" href="./contact.html">Contact</a>
+        <a class="hover:text-[#F1F0E8]" href="./projects.html">Projects</a>
+        <a class="hover:text-[#F1F0E8]" href="./mywork.html">Sample Work</a>
+    </div>
+</header>
+<main class="flex-grow">
+    <section id="personal-info" class="bg-[#B3C8CF] text-center py-20 shadow-lg rounded-md mt-16">
+        <h2 class="text-3xl font-semibold mb-6">Personal Information</h2>
+        <p class="text-lg text-black max-w-2xl mx-auto">
+            Name: Aleksandr<br>
+            Location: Perth, Australia<br>
+            Email: sashavalera35@gmail.com<br>
+            GitHub: <a href="https://github.com/alexperedel" class="text-[#89A8B2]" target="_blank">https://github.com/alexperedel</a>
+        </p>
+    </section>
+
+    <section id="education" class="bg-[#E5E1DA] text-center py-20 mt-16 shadow-lg rounded-md">
+        <h2 class="text-3xl font-semibold mb-6">Education</h2>
+        <p class="text-lg text-black max-w-2xl mx-auto">
+            <strong>TAFE WA - Certificate IV in Programming</strong><br>
+            Year: 2024 (Expected)<br>
+            Focus: Python, SQL, Web Development, and C#<br>
+            Relevant Courses: Advanced Programming Techniques, Software Development, Database Management.
+        </p>
+    </section>
+
+    <section id="skills" class="bg-[#B3C8CF] text-center py-20 mt-16 shadow-lg rounded-md">
+        <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+        <p class="text-lg text-black max-w-2xl mx-auto">
+            Python (Advanced)<br>
+            Basic Frontend (HTML, CSS, JavaScript)<br>
+            SQL (MySQL)<br>
+            Version Control Systems (Git, GitHub)<br>
+            C# (Basic understanding)
+        </p>
+    </section>
+
+    <section id="projects" class="bg-[#E5E1DA] text-center py-20 mt-16 shadow-lg rounded-md">
+        <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+        <div class="project-list max-w-2xl mx-auto">
+            <div class="project mb-8">
+                <h3 class="text-2xl font-semibold text-[#89A8B2]">Telegram Python Bot</h3>
+                <p class="text-lg text-black">A Telegram bot built using Python that interacts with users, processes commands, and automates tasks. It is integrated with the Telegram API to send and receive messages based on predefined logic.</p>
+            </div>
+            <div class="project mb-8">
+                <h3 class="text-2xl font-semibold text-[#89A8B2]">Personal Portfolio Website</h3>
+                <p class="text-lg text-black">A portfolio website showcasing my work, skills, and projects. Built with HTML, CSS, and JavaScript, with a responsive design and user-friendly interface for easy navigation.</p>
+            </div>
+            <div class="project">
+                <h3 class="text-2xl font-semibold text-[#89A8B2]">C# Mobile App</h3>
+                <p class="text-lg text-black">A mobile app developed using C# MAUI. The app provides a simple, intuitive interface for users to interact with key features.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bottom-footer flex w-full bg-[#89A8B2] mt-16 text-white items-center p-2 xl:p-[1%]">
+    <p>&copy; 2024 Aleksandr & Adrian Gould. All Rights Reserved.</p>
+    <nav class="bottom-nav flex flex-row text-white pt-1 pl-[15%]">
+        <a class="inline-block px-4 py-2" href="./index.html">Home</a>
+        <a class="inline-block px-4 py-2" href="./about.html">About</a>
+        <a class="inline-block px-4 py-2" href="./contact.html">Contact</a>
+        <a class="inline-block px-4 py-2" href="./projects.html">Projects</a>
+        <a class="inline-block px-4 py-2" href="./mywork.html">Sample Work</a>
+    </nav>
+</footer>
 
 </body>
 </html>
