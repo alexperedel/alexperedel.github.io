@@ -1,6 +1,6 @@
 # Project Color Scheme
 
-Here is the color scheme for the project, including 4 main colors besides Black and White.
+Here is the color scheme for the project, including main colors besides Black and White.
 
 | Name             | RGB                | HEX        |
 |------------------|--------------------|------------|
